@@ -29,7 +29,7 @@ button {
 	background-color: #112233;
 	font-family: Futura, Helvetica, sans-serif;
   	color: white;
-	border: none;
+	border: 2px solid #112233;
 	border-radius: 20px;
 	padding: 10px 20px;
 
