@@ -1,0 +1,40 @@
+div {
+	background-color: #3E414E;
+	font-family: Futura, Helvetica, sans-serif;
+	font-size: 16px;
+	color: white;
+}
+main {
+	font-family: Futura, Helvetica, sans-serif;
+	font-size: 16px;
+	color: white;
+	padding-bottom: 20px;
+}
+h1 {
+	font-family: "Chunk Five Print", serif;
+	font-size: 30px;
+}
+h2 {
+	font-family: Chunk, serif;
+	font-size: 24px;
+	color: white;
+}
+h3 {
+	font-family: Chunk, serif;
+	font-size: 20px;
+	color: white;
+}
+button {
+	background-color: #112233;
+	font-family: Futura, Helvetica, sans-serif;
+  	color: white;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+
+}
+button:hover {
+  	background-color: white;
+  	color: #112233;
+	border: 2px solid #112233;
+}
