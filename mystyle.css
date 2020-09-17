@@ -1,6 +1,5 @@
 div {
 	background-color: #3E414E;
-	padding-bottom: 40px;
 	font-family: Futura, Helvetica, sans-serif;
 	font-size: 16px;
 	color: white;
@@ -11,17 +10,32 @@ main {
 	color: white;
 	padding-bottom: 20px;
 }
+Projects {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+Project{
+	background-color: white;
+	font-family: Futura, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #112233;
+	border-radius: 10px;
+}
 h1 {
 	font-family: "Chunk Five Print", serif;
+	src: url("Chunk Five Print.ttf");
 	font-size: 30px;
 }
 h2 {
 	font-family: Chunk, serif;
 	font-size: 24px;
+	src: url("Chunk.ttf");
 	color: white;
 }
 h3 {
 	font-family: Chunk, serif;
+	src: url("Chunk.ttf");
 	font-size: 20px;
 	color: white;
 }
@@ -37,5 +51,4 @@ button {
 button:hover {
   	background-color: white;
   	color: #112233;
-	border: 2px solid #112233;
 }
