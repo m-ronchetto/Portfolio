@@ -1,47 +1,79 @@
-div {
-	background-color: #3E414E;
-	font-family: Futura, Helvetica, sans-serif;
-	font-size: 16px;
-	color: white;
+@font-face {
+	font-family: 'Chunk Five Print';
+	src: url("Chunk Five Print.ttf")
 }
-main {
-	font-family: Futura, Helvetica, sans-serif;
-	font-size: 16px;
-	color: white;
-	padding-bottom: 20px;
+
+@font-face {
+	font-family: "Chunk";
+	src: url("Chunk.ttf")
 }
-Projects {
-	display: grid;
+
+div.Projects {
+	display: flex;
+/*
 	grid-template-columns: repeat(3, 1fr);
 	gap: 30px;
+*/
+	flex-direction: horizontal;
 }
-Project{
+div.Project{
 	background-color: white;
-	font-family: Futura, Helvetica, sans-serif;
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 400;
 	font-size: 16px;
 	color: #112233;
 	border-radius: 10px;
+	padding: 5px;
+	margin-left: 10px;
+}
+div.Background{
+	background-color: #3E414E;
+	padding-bottom: 40px;
+	padding-left: 100px;
+}
+main {
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: white;
+}
+p {
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: white;
+}
+p.projecttext {
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #112233;
 }
 h1 {
 	font-family: "Chunk Five Print", serif;
-	src: url("Chunk Five Print.ttf");
-	font-size: 30px;
+	font-size: 70px;
 }
 h2 {
 	font-family: Chunk, serif;
-	font-size: 24px;
-	src: url("Chunk.ttf");
+	font-size: 35px;
+	font-weight: 300;
 	color: white;
 }
 h3 {
 	font-family: Chunk, serif;
-	src: url("Chunk.ttf");
+	font-weight: 300;
 	font-size: 20px;
-	color: white;
+	color: #112233;
 }
 button {
 	background-color: #112233;
-	font-family: Futura, Helvetica, sans-serif;
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 400;
   	color: white;
 	border: 2px solid #112233;
 	border-radius: 20px;
@@ -51,4 +83,10 @@ button {
 button:hover {
   	background-color: white;
   	color: #112233;
+}
+body {
+	margin: 0px;
+}
+a {
+	width: 100%;
 }
