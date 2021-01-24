@@ -1,26 +1,47 @@
+@font-face {
+	font-family: 'MarvinVisionsBig-Bold';
+	src: url("MarvinVisionsBig-Bold.ttf")
+}
+
+@font-face {
+	font-family: "VTCBayard-Regular";
+	src: url("VTCBayard-Regular.otf")
+}
+
+html {
+	background-color: #111111;
+}
+header {
+	display: block;
+}
+nav {
+	padding-left: 60%;
+}
 div.Projects {
 	display: flex;
-/*
-	grid-template-columns: repeat(3, 1fr);
-	gap: 30px;
-*/
-	flex-direction: horizontal;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
 }
-div.Project{
+div.Project {
 	background-color: white;
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	color: #112233;
-	border-radius: 10px;
-	padding: 5px;
-	margin-left: 10px;
+	color: #111111;
+	height: 270px;
+	border-radius: 5px;
+	margin-right: 2%;
+	width: 25%;
+	margin-bottom: 20px;
 }
 div.Background{
-	background-color: #3E414E;
+	margin-top: 10px;
 	padding-bottom: 40px;
-	padding-left: 100px;
+	padding-left: 7%;
+	padding-right: 7%;
+	border-top: 1px solid white;
 }
 main {
 	font-family: futura-pt, sans-serif;
@@ -35,48 +56,126 @@ p {
 	font-weight: 400;
 	font-size: 16px;
 	color: white;
+	margin-top: 0px;
 }
 p.projecttext {
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	color: #112233;
+	color: #111111;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+.Project>h3{
+	padding-left: 15px;
+	padding-right: 15px;
 }
 h1 {
-	font-family: "Chunk Five Print", serif;
-	font-size: 70px;
+	font-family: VTCBayard-Regular, serif;
+	color: white;
+	font-size: 25px;
+	padding-left: 5%;
 }
 h2 {
-	font-family: "Chunk", serif;
+	font-family: VTCBayard-Regular, serif;
 	font-size: 35px;
 	font-weight: 300;
 	color: white;
 }
 h3 {
-	font-family: "Chunk", serif;
-	font-weight: 300;
-	font-size: 20px;
-	color: #112233;
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #111111;
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 button {
-	background-color: #112233;
+	background-color: #ff0000;
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
 	font-weight: 400;
   	color: white;
-	border: 2px solid #112233;
+	border: 2px solid #ff0000;
 	border-radius: 20px;
 	padding: 10px 20px;
-
+	margin-top: 20px;
 }
 button:hover {
   	background-color: white;
-  	color: #112233;
+  	color: #ff0000;
+}
+#see-all{
+	margin-left: 50%;
 }
 body {
 	margin: 0px;
 }
 a {
 	width: 100%;
+}
+a:link {
+	color: white;
+	text-decoration: none;
+}
+a:visited{
+	color: white;
+}
+#current{
+	color: #ff0000;
+}
+a:hover{
+	font-style: bold;
+}
+ul{
+	padding-left: 100px;
+	color: white;
+}
+ul>a {
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	margin-left: 10px;
+}
+img {
+	width: 100%;
+	height: 50%;
+	object-fit: cover;
+	border-radius: 5px 5px 0px 0px;
+}
+#profile{
+	width: 30%;
+	margin-left: 10%;
+}
+#about{
+	display: flex;
+	margin-right: 10%;
+}
+#intro{
+	display: flex;
+	flex-direction: row;
+}
+#intro>p{
+	margin-right: 5%;
+}
+
+@media screen and (max-width: 1250px){
+	div.Projects{
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 800px){
+	div.Projects{
+		flex-direction: column;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+	div.Project{
+		height: 200px;
+		width: 200px;
+	}
 }
