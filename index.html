@@ -2,71 +2,96 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="https://use.typekit.net/scl1ziz.css">
 <title>Portfolio</title>
 </head>
 
 <body>
-	<h1> Madison Ronchetto
-	</h1>
-	<ul>
-		Home
-		Projects
-		About
-	</ul>
-	<div>
-		<h2> Tagline Goes Here
-		</h2>
+	<header>
+		<nav>
+			<a href="index.html">
+				<h1> 
+				madison
+			</h1>
+			<h1>
+				ronchetto
+			</h1>
+			</a>
+			<ul>
+				<a id=current href="index.html">
+					Home
+				</a>	
+				<a href="construction.html">
+					Projects
+				</a>
+				<a href="about.html">
+					About
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<div class= Background>
 		<main>
-			Here is a brief blurb about me, education, most recent position, etc. Probably about 3 sentences long.
+			<h2> 
+				DESIGNING AN EQUITABLE WORLD
+			</h2>
+			<div id=intro>
+				<p>
+					I am a junior Communication Design student at Washington University in St. Louis. 
+					My work's focus is on how we can present important progressive topics in a way that gives a voice to marginalized communities.
+					Currently, I am working as a web developer at the <a href= "https://www.thesqsh.org/"> St. Louis Queer Support Helpline</a>.
+				</p>
+				<a href= "about.html">
+					<button>
+						 Learn More About Me
+					</button>
+				</a>
+			</div>
+			<h2> 
+				FEATURED PROJECTS
+			</h2>
+			<div class= "Projects">
+				<div class= "Project">
+					<a href="counternarrative.html">
+						<img src="image2.png" alt="A pink poster on a green background describing different forms of women's media."> 
+					</a>
+					<h3>
+						Counternarrative: Women's Sexuality in Design
+					</h3>
+					<p class= "projecttext"> 
+						An alternative design history showcased through women's literature and advertisements. 
+					</p>
+				</div>
+				<div class= "Project">
+					<a href="youarehere.html">
+						<img src="image1.png" alt="Mockup of 3 colorful postcards featuring Cori Bush, Maya Angelou, and Max Starkloff.">
+					</a>
+					<h3>
+						You Are Here: Weaving Change in St. Louis
+					</h3>
+					<p class= "projecttext"> 
+						A postcard collection highlighting the activists that changed St. Louis and the country.
+					</p>
+				</div>
+				<div class= "Project">
+					<a href="construction.html">
+						<img src="image3.png" alt="Muted book spread.">
+					</a>
+					<h3>
+						Insert Title
+					</h3>
+					<p class= "projecttext"> 
+						Brief description section here.
+					</p>
+				</div>
+			</div>	
+			<a href= "construction.html">
+				<button id= see-all>
+					See All Projects
+				</button>
+			</a>
 		</main>
-		<a href="about.html">Learn More About Me</a>
-		<h2> Featured Projects
-		</h2>
-		<table width="300" border="1">
-  			<tbody>
-				<tr>
-					<td>
-						<a href="url">
-							<img src="file:///C|/Users/Madison/Desktop/Project 1/Website Sample.png" width="144" height="170" alt=""/>
-						</a>
-					</td>
-					<td>
-						<a href="url">
-							<img src="file:///C|/Users/Madison/Desktop/Project 1/Website Sample.png" width="144" height="170" alt=""/>
-						</a>
-					</td>
-					<td>
-						<a href="url">
-							<img src="file:///C|/Users/Madison/Desktop/Project 1/Website Sample.png" width="144" height="170" alt=""/>
-						</a>
-					</td>
-				</tr>
-    			<tr>
-     				 <td>
-						 <h3>Project Name
-						 </h3>
-						 <div>
-							 Description text here. This will be 1-2 sentences.
-						 </div>
-					</td>
-     				 <td>
-						 <h3>Project Name
-						 </h3>
-						 <div>
-							 Description text here. This will be 1-2 sentences.
-						 </div></td>
-    				  <td>
-						  <h3>Project Name
-						 </h3>
-						 <div>
-							 Description text here. This will be 1-2 sentences.
-						 </div>
-					</td>
-   			   </tr>
-  			</tbody>
-		</table>
-
-		<a href="url">See All Projects</a>
 	</div>
 </body>
 </html>
