@@ -1,0 +1,70 @@
+/* General Styling */
+html{
+    padding-left: 2%;
+    padding-right: 2%;
+    scroll-behavior: smooth;
+    margin: 0;
+    line-height: 115%;
+    font-family: 'Roboto', sans-serif;
+    /* placeholder for gradient */
+    background-color:#c2c2c2;
+}
+h1{
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 1.25rem;
+}
+.section{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+
+/* Summary Stying */
+#summary{
+    display: flex;
+    padding: 50px;
+}
+img{
+    object-fit: cover;
+    width: 20%;
+}
+#summary>p{
+    width:60%;
+    padding-right: 30px;
+}
+
+
+/* Nav Styling */
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px black solid;
+    background-color: white;
+}
+nav{
+    display: flex;
+    height: fit-content;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: 0;
+    width: fit-content;
+}
+nav>a{
+    padding: 5px;
+    text-decoration: none;
+    height:fit-content;
+    color: black;
+    transition: font-size .5s;
+}
+nav>a:visited{
+    color: black;
+}
+nav>a:hover{
+    font-size: 1.05rem;
+    color: #F04646;
+}
