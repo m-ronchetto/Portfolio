@@ -73,6 +73,9 @@ img{
     height: 300px;
     margin-bottom: 30px;
 }
+p>a{
+    font-weight: bold;
+}
 
 /* Summary Stying */
 #summary{
@@ -85,6 +88,19 @@ img{
 #left-column{
     width:60%;
     padding-right: 30px;
+}
+button{
+    border-radius: 15px;
+    font-size: 1rem;
+    background-color: #F04646;
+    color: white;
+    border: 1px white solid;
+    padding: 6px 10px 6px 10px; 
+}
+button:hover{
+    color: #F04646;
+    background-color: white;
+    border-color: #F04646;
 }
 
 
