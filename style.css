@@ -153,6 +153,7 @@ header{
     display: flex;
     position: sticky;
     top: 0;
+    z-index: 1;
     background-color: rgba(255, 255, 255, .8);
     padding-left: 9%;
     padding-right: 9%;
@@ -186,6 +187,7 @@ a:hover{
 }
 .project{
     width: 23%;
+    height: auto;
     padding: 0;
     margin: .5%;
     position: relative;
