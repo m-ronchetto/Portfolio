@@ -94,7 +94,7 @@
     color: #f2f2f2;
     font-size: .9rem;
     position: absolute;
-    top: 0;
+    top: -40px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
