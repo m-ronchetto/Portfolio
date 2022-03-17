@@ -1,50 +1,101 @@
 /* General Styling */
 html{
-    padding-left: 2%;
-    padding-right: 2%;
     scroll-behavior: smooth;
-    margin: 0;
-    line-height: 115%;
+    line-height: 120%;
     font-family: 'Roboto', sans-serif;
-    /* placeholder for gradient */
-    background-color:#c2c2c2;
+    /* placeholder for gradient
+    background-color:#f0f0f0; */
+}
+body, html{
+    margin: 0;
 }
 h1{
     font-size: 1.5rem;
 }
 h2{
-    font-size: 1.25rem;
+    font-size: 1.35rem;
+}
+h3{
+    font-size: 1rem;
+}
+h4{
+    font-style: italic;
+    font-weight: normal;
+    margin: 0;
+}
+p{
+    font-size: .9rem;
 }
 .section{
     background-color: white;
-    padding: 20px;
+    padding: 20px 0px 50px 0px;
     margin-bottom: 50px;
     margin-top: 20px;
+    margin-left: 12%;
+    margin-right: 12%;
+    border-bottom: 1px #9f9f9f solid;
 }
 
+/* Project Styling */
+.tags{
+    color: #9f9f9f;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 550px;
+}
+.intro-text{
+    display: flex;
+    margin-bottom: 30px;
+}
+.intro-text>.right{
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0;
+}
+.main-text{
+    display: flex;
+    margin-top: 30px;
+}
+.main-text>.left{
+    width: 40%;
+    margin-right: 2%;
+}
+.main-text>.right{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 0;
+}
+.main-text>.right>img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+}
 
 /* Summary Stying */
 #summary{
     display: flex;
-    padding: 50px;
 }
-img{
-    object-fit: cover;
+#summary>img{
     width: 20%;
+    height: auto;
 }
-#summary>p{
+#left-column{
     width:60%;
     padding-right: 30px;
 }
 
 
-/* Nav Styling */
+/* Top Nav Styling */
 header{
     display: flex;
     position: sticky;
     top: 0;
-    border-bottom: 1px black solid;
-    background-color: white;
+    background-color: rgba(255, 255, 255, .8);
+    padding-left: 9%;
+    padding-right: 9%;
 }
 nav{
     display: flex;
@@ -54,17 +105,29 @@ nav{
     margin-right: 0;
     width: fit-content;
 }
-nav>a{
+a{
     padding: 5px;
     text-decoration: none;
     height:fit-content;
     color: black;
-    transition: font-size .5s;
 }
-nav>a:visited{
+a:visited{
     color: black;
 }
-nav>a:hover{
-    font-size: 1.05rem;
+a:hover{
     color: #F04646;
+}
+
+
+/* Project Menu Styling */
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project{
+    width: 23%;
+    margin: .5%;
+}
+.project>img{
+    height: 300px;
 }
