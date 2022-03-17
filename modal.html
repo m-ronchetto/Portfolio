@@ -26,22 +26,22 @@
     <div class="modal-content">
   
       <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
+        <!-- <div class="numbertext">1 / 4</div> -->
         <img src="images/project-1/Henry.png" style="width:100%">
       </div>
   
       <div class="mySlides">
-        <div class="numbertext">2 / 4</div>
+        <!-- <div class="numbertext">2 / 4</div> -->
         <img src="images/project-1/Cori.png" style="width:100%">
       </div>
   
       <div class="mySlides">
-        <div class="numbertext">3 / 4</div>
+        <!-- <div class="numbertext">3 / 4</div> -->
         <img src="images/project-1/Joan.png" style="width:100%">
       </div>
   
       <div class="mySlides">
-        <div class="numbertext">4 / 4</div>
+        <!-- <div class="numbertext">4 / 4</div> -->
         <img src="images/project-1/Maya.png" style="width:100%">
       </div>
   
@@ -54,22 +54,22 @@
         <p id="caption"></p>
       </div>
   
-      <!-- Thumbnail image controls -->
+      <!-- Thumbnail image controls
       <div class="column">
-        <img class="demo" src="images/project-1/Henry.png" onclick="currentSlide(1)" alt="Nature">
+        <img class="demo" src="images/project-1/Henry.png" onclick="currentSlide(1)">
       </div>
   
       <div class="column">
-        <img class="demo" src="images/project-1/Cori.png" onclick="currentSlide(2)" alt="Snow">
+        <img class="demo" src="images/project-1/Cori.png" onclick="currentSlide(2)">
       </div>
   
       <div class="column">
-        <img class="demo" src="images/project-1/Joan.png" onclick="currentSlide(3)" alt="Mountains">
+        <img class="demo" src="images/project-1/Joan.png" onclick="currentSlide(3)">
       </div>
   
       <div class="column">
-        <img class="demo" src="images/project-1/Maya.png" onclick="currentSlide(4)" alt="Lights">
-      </div>
+        <img class="demo" src="images/project-1/Maya.png" onclick="currentSlide(4)">
+      </div> -->
     </div>
   </div>
   <script>
@@ -100,7 +100,6 @@
       var i;
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("demo");
-      var captionText = document.getElementById("caption");
       if (n > slides.length) {slideIndex = 1}
       if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
@@ -111,7 +110,6 @@
       }
       slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
-      captionText.innerHTML = dots[slideIndex-1].alt;
     }
     </script>
     </body>
