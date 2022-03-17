@@ -78,8 +78,90 @@
                         </p>
                     </div>
                     <div class="right">
-                        <img src="images/project-1/Cori.png">
+                        <div class="column">
+                            <img src="images/project-1/Henry.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                          </div>
                         <img src="images/project-1/CoriB.png">
+                          <!-- The Modal/Lightbox -->
+                          <div id="myModal" class="modal">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+                          
+                              <div class="mySlides">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="images/project-1/Henry.png">
+                              </div>
+                          
+                              <div class="mySlides">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="images/project-1/Cori.png">
+                              </div>
+                          
+                              <div class="mySlides">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="images/project-1/Joan.png">
+                              </div>
+                          
+                              <div class="mySlides">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="images/project-1/Percy.png">
+                              </div>
+
+                              <div class="mySlides">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="images/project-1/Maya.png">
+                              </div>
+
+                              <div class="mySlides">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="images/project-1/Max.png">
+                              </div>
+                          
+                              <!-- Next/previous controls -->
+                              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                          </div>
+                          <script>
+                            // Open the Modal
+                            function openModal() {
+                              document.getElementById("myModal").style.display = "block";
+                            }
+                            
+                            // Close the Modal
+                            function closeModal() {
+                              document.getElementById("myModal").style.display = "none";
+                            }
+                            
+                            var slideIndex = 1;
+                            showSlides(slideIndex);
+                            
+                            // Next/previous controls
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+                            
+                            // Thumbnail image controls
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                            
+                            function showSlides(n) {
+                              var i;
+                              var slides = document.getElementsByClassName("mySlides");
+                              var dots = document.getElementsByClassName("demo");
+                              if (n > slides.length) {slideIndex = 1}
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "flex";
+                              dots[slideIndex-1].className += " active";
+                            }
+                            </script>
                     </div>
                 </div>   
             </div>
@@ -373,7 +455,20 @@
                         <button>Github</button>
                     </div>
                 </div>
-                <img src="images/profile.png">
+                <div id="right-column">
+                    <div id="row-1">
+                        <img src="images/about/IMG_4928.jpg">
+                    </div>
+                    <!-- <div id="row-2">
+                        <img src="images/about/IMG_1185.jpg">
+                        <img src="images/about/IMG_9910.jpg">
+                    </div> -->
+                    <div id="row-3">
+                        <img src="images/about/IMG_3263.jpg">
+                        <img src="images/about/IMG_3225.jpg">
+                        <img src="images/about/IMG_4442.jpg">
+                    </div>
+                </div>
             </div>
         </main>
     </body>

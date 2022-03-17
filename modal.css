@@ -1,22 +1,19 @@
-.row > .column {
-    padding: 0 8px;
-}
-  
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
   /* Create four equal columns that floats next to eachother */
   .column {
-    float: left;
-    width: 23%;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
   }
 
-  .column>img, .mySlides>img{
+  .column>img{
+    object-fit: cover;
+    height: 90%;
+  }
+
+  .mySlides>img{
       object-fit: cover;
-      width: 100%;
+      width: 70%;
+      height: 50%;
   }
   
   /* The Modal (background) */
@@ -41,7 +38,7 @@
     margin: auto;
     padding: 0;
     width: 90%;
-    height: 90%;
+    height: fit-content;
     max-width: 1200px;
   }
   
@@ -65,6 +62,8 @@
   /* Hide the slides by default */
   .mySlides {
     display: none;
+    background-color: black;
+    justify-content: center;
   }
   
   /* Next & previous buttons */
@@ -89,6 +88,13 @@
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: .9rem;
+    position: absolute;
+    top: 0;
   }
   
   /* On hover, add a black background color with a little bit see-through */
