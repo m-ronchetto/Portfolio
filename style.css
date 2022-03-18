@@ -100,7 +100,7 @@ p>a{
 #button-cont{
     padding-top: 15px;
 }
-button{
+.button{
     border-radius: 15px;
     margin-right: 5px;
     font-size: 1rem;
@@ -109,7 +109,10 @@ button{
     border: 1px white solid;
     padding: 6px 10px 6px 10px; 
 }
-button:hover{
+.button:visited{
+    color: white;
+}
+.button:hover{
     color: #F04646;
     background-color: white;
     border-color: #F04646;
@@ -222,4 +225,12 @@ a:hover{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+/* Project Navigation Menu */
+.projects-nav-hidden{
+    display: none;
+}
+.project-nav{
+    display: block;
 }
