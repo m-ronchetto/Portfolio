@@ -201,6 +201,13 @@ a:hover{
     margin: .5%;
     position: relative;
 }
+.preview{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: .5%;
+    position: relative;
+}
 .overlay{
     position: absolute;
     top: 0;
@@ -217,7 +224,7 @@ a:hover{
     height: 300px;
     display: block;
 }
-.project:hover .overlay{
+.project:hover .overlay, .preview:hover .overlay{
     opacity: 1;
 }
 .text {
