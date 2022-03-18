@@ -18,7 +18,7 @@
                 <a id="creative-coding-header" href="#coding">Creative Coding</a>
             </nav>
         </header>
-        <div class="projects-nav-hidden">
+        <!-- <div class="projects-nav-hidden">
             <h2>Projects</h2>
             <div class="project-container">
                 <a class="project" href="#project-1-anchor">
@@ -70,7 +70,7 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </div> -->
         <main>
             <div class="section" id="projects">
                 <h2>Projects</h2>
@@ -167,7 +167,9 @@
                         <div class="column">
                             <img src="images/project-1/Henry.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
                           </div>
-                        <img src="images/project-1/CoriB.png">
+                        <div class="column">
+                            <img src="images/project-1/CoriB.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                        </div>
                           <!-- The Modal/Lightbox -->
                           <div id="myModal" class="modal">
                             <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -235,6 +237,86 @@
                             function showSlides(n) {
                               var i;
                               var slides = document.getElementsByClassName("mySlides");
+                              var dots = document.getElementsByClassName("demo");
+                              if (n > slides.length) {slideIndex = 1}
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "flex";
+                              dots[slideIndex-1].className += " active";
+                            }
+                            </script>
+                            <!-- The Modal/Lightbox -->
+                          <div id="myModal3" class="modal">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+                          
+                              <div class="mySlides3">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="images/project-1/HenryB.png">
+                              </div>
+                          
+                              <div class="mySlides3">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="images/project-1/CoriB.png">
+                              </div>
+                          
+                              <div class="mySlides3">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="images/project-1/JoanB.png">
+                              </div>
+                          
+                              <div class="mySlides3">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="images/project-1/PercyB.png">
+                              </div>
+
+                              <div class="mySlides3">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="images/project-1/MayaB.png">
+                              </div>
+
+                              <div class="mySlides3">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="images/project-1/MaxB.png">
+                              </div>
+                          
+                              <!-- Next/previous controls -->
+                              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                          </div>
+                          <script>
+                            // Open the Modal
+                            function openModal() {
+                              document.getElementById("myModal3").style.display = "block";
+                            }
+                            
+                            // Close the Modal
+                            function closeModal() {
+                              document.getElementById("myModal3").style.display = "none";
+                            }
+                            
+                            var slideIndex = 1;
+                            showSlides(slideIndex);
+                            
+                            // Next/previous controls
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+                            
+                            // Thumbnail image controls
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                            
+                            function showSlides(n) {
+                              var i;
+                              var slides = document.getElementsByClassName("mySlides3");
                               var dots = document.getElementsByClassName("demo");
                               if (n > slides.length) {slideIndex = 1}
                               if (n < 1) {slideIndex = slides.length}
@@ -349,7 +431,72 @@
                         </p>
                     </div>
                     <div class="right">
-                        <img src="images/project-3/example 1.png">
+                        <img id="tall" src="images/project-3/example 1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                          <!-- The Modal/Lightbox -->
+                          <div id="myModal2" class="modal">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+                          
+                              <div class="mySlides2">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="images/project-3/example 1.png">
+                              </div>
+                          
+                              <div class="mySlides2">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="images/project-3/Screenshot 2022-03-18 001633.png">
+                              </div>
+                          
+                              <div class="mySlides2">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="images/project-3/Screenshot 2022-03-18 001727.png">
+                              </div>
+                          
+                              <!-- Next/previous controls -->
+                              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                          </div>
+                          <script>
+                            // Open the Modal
+                            function openModal() {
+                              document.getElementById("myModal2").style.display = "block";
+                            }
+                            
+                            // Close the Modal
+                            function closeModal() {
+                              document.getElementById("myModal2").style.display = "none";
+                            }
+                            
+                            var slideIndex = 1;
+                            showSlides(slideIndex);
+                            
+                            // Next/previous controls
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+                            
+                            // Thumbnail image controls
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                            
+                            function showSlides(n) {
+                              var i;
+                              var slides = document.getElementsByClassName("mySlides2");
+                              var dots = document.getElementsByClassName("demo");
+                              if (n > slides.length) {slideIndex = 1}
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "flex";
+                              dots[slideIndex-1].className += " active";
+                            }
+                            </script>
                     </div>
                 </div>
             </div>
@@ -527,7 +674,7 @@
             <div class="section" id="project-8">
                 <h2>Capstone: Coming Soon</h2>
                 <p>
-                    To preview the project as it develops, visit here.
+                    To preview the project as it develops, visit<a href="https://github.com/m-ronchetto/Capstone">here.</a>
                 </p>
             </div>
             <div class="section" id="summary">
@@ -565,5 +712,5 @@
             </div>
         </main>
     </body>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </html>
