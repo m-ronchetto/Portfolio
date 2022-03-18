@@ -15,6 +15,13 @@
       width: 70%;
       height: 50%;
   }
+
+  .mySlides2>img{
+    object-fit: cover;
+    width: 30%;
+    height: 55%;
+    justify-content: center;
+  }
   
   /* The Modal (background) */
   .modal {
@@ -34,7 +41,7 @@
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: black;
     margin: auto;
     padding: 0;
     width: 90%;
