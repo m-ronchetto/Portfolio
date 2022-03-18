@@ -20,6 +20,9 @@
     object-fit: cover;
     width: 30%;
     height: 55%;
+  }
+
+  .mySlides, .mySlides2, .mySlides3, .mySlides4{
     justify-content: center;
   }
   

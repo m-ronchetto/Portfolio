@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="modal.css"/>
+        <script src="script.js"></script>
+
     </head>
     <body>
         <header>
@@ -165,14 +167,14 @@
                     </div>
                     <div class="right">
                         <div class="column">
-                            <img src="images/project-1/Henry.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                            <img src="images/project-1/Henry.png" onclick="openModal('myModal');currentSlide(1,'mySlides')" class="hover-shadow">
                           </div>
                         <div class="column">
-                            <img src="images/project-1/CoriB.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                            <img src="images/project-1/HenryB.png" onclick="openModal('myModal3');currentSlide(1,'mySlides3')" class="hover-shadow">
                         </div>
                           <!-- The Modal/Lightbox -->
                           <div id="myModal" class="modal">
-                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <span class="close cursor" onclick="closeModal('myModal')">&times;</span>
                             <div class="modal-content">
                           
                               <div class="mySlides">
@@ -206,53 +208,14 @@
                               </div>
                           
                               <!-- Next/previous controls -->
-                              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                              <a class="prev" onclick="plusSlides(-1,'mySlides')">&#10094;</a>
+                              <a class="next" onclick="plusSlides(1,'mySlides')">&#10095;</a>
                             </div>
                           </div>
-                          <script>
-                            // Open the Modal
-                            function openModal() {
-                              document.getElementById("myModal").style.display = "block";
-                            }
-                            
-                            // Close the Modal
-                            function closeModal() {
-                              document.getElementById("myModal").style.display = "none";
-                            }
-                            
-                            var slideIndex = 1;
-                            showSlides(slideIndex);
-                            
-                            // Next/previous controls
-                            function plusSlides(n) {
-                              showSlides(slideIndex += n);
-                            }
-                            
-                            // Thumbnail image controls
-                            function currentSlide(n) {
-                              showSlides(slideIndex = n);
-                            }
-                            
-                            function showSlides(n) {
-                              var i;
-                              var slides = document.getElementsByClassName("mySlides");
-                              var dots = document.getElementsByClassName("demo");
-                              if (n > slides.length) {slideIndex = 1}
-                              if (n < 1) {slideIndex = slides.length}
-                              for (i = 0; i < slides.length; i++) {
-                                slides[i].style.display = "none";
-                              }
-                              for (i = 0; i < dots.length; i++) {
-                                dots[i].className = dots[i].className.replace(" active", "");
-                              }
-                              slides[slideIndex-1].style.display = "flex";
-                              dots[slideIndex-1].className += " active";
-                            }
-                            </script>
+                         
                             <!-- The Modal/Lightbox -->
                           <div id="myModal3" class="modal">
-                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <span class="close cursor" onclick="closeModal('myModal3')">&times;</span>
                             <div class="modal-content">
                           
                               <div class="mySlides3">
@@ -286,50 +249,11 @@
                               </div>
                           
                               <!-- Next/previous controls -->
-                              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                              <a class="prev" onclick="plusSlides(-1,'mySlides3')">&#10094;</a>
+                              <a class="next" onclick="plusSlides(1,'mySlides3')">&#10095;</a>
                             </div>
                           </div>
-                          <script>
-                            // Open the Modal
-                            function openModal() {
-                              document.getElementById("myModal3").style.display = "flex";
-                            }
-                            
-                            // Close the Modal
-                            function closeModal() {
-                              document.getElementById("myModal3").style.display = "none";
-                            }
-                            
-                            var slideIndex = 1;
-                            showSlides(slideIndex);
-                            
-                            // Next/previous controls
-                            function plusSlides(n) {
-                              showSlides(slideIndex += n);
-                            }
-                            
-                            // Thumbnail image controls
-                            function currentSlide(n) {
-                              showSlides(slideIndex = n);
-                            }
-                            
-                            function showSlides(n) {
-                              var i;
-                              var slides = document.getElementsByClassName("mySlides3");
-                              var dots = document.getElementsByClassName("demo");
-                              if (n > slides.length) {slideIndex = 1}
-                              if (n < 1) {slideIndex = slides.length}
-                              for (i = 0; i < slides.length; i++) {
-                                slides[i].style.display = "none";
-                              }
-                              for (i = 0; i < dots.length; i++) {
-                                dots[i].className = dots[i].className.replace(" active", "");
-                              }
-                              slides[slideIndex-1].style.display = "flex";
-                              dots[slideIndex-1].className += " active";
-                            }
-                            </script>
+                         
                     </div>
                 </div>   
             </div>
@@ -387,12 +311,10 @@
                 </p>
                     </div>
                     <div class="right">
-                        <div class="column">
-                            <img src="images/project-2/Madison_Ronchetto_Collaborative_30.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                        </div>
+                        <img id="tall" src="images/project-2/Madison_Ronchetto_Collaborative_30.jpg" onclick="openModal('myModal4');currentSlide(1,'mySlides4')" class="hover-shadow">
                             <!-- The Modal/Lightbox -->
                           <div id="myModal4" class="modal">
-                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <span class="close cursor" onclick="closeModal('myModal4')">&times;</span>
                             <div class="modal-content">
                           
                               <div class="mySlides4">
@@ -416,50 +338,10 @@
                               </div>
                           
                               <!-- Next/previous controls -->
-                              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                              <a class="prev" onclick="plusSlides(-1, 'mySlides4')">&#10094;</a>
+                              <a class="next" onclick="plusSlides(1, 'mySlides4')">&#10095;</a>
                             </div>
                           </div>
-                          <script>
-                            // Open the Modal
-                            function openModal() {
-                              document.getElementById("myModal4").style.display = "flex";
-                            }
-                            
-                            // Close the Modal
-                            function closeModal() {
-                              document.getElementById("myModal4").style.display = "none";
-                            }
-                            
-                            var slideIndex = 1;
-                            showSlides(slideIndex);
-                            
-                            // Next/previous controls
-                            function plusSlides(n) {
-                              showSlides(slideIndex += n);
-                            }
-                            
-                            // Thumbnail image controls
-                            function currentSlide(n) {
-                              showSlides(slideIndex = n);
-                            }
-                            
-                            function showSlides(n) {
-                              var i;
-                              var slides = document.getElementsByClassName("mySlides4");
-                              var dots = document.getElementsByClassName("demo");
-                              if (n > slides.length) {slideIndex = 1}
-                              if (n < 1) {slideIndex = slides.length}
-                              for (i = 0; i < slides.length; i++) {
-                                slides[i].style.display = "none";
-                              }
-                              for (i = 0; i < dots.length; i++) {
-                                dots[i].className = dots[i].className.replace(" active", "");
-                              }
-                              slides[slideIndex-1].style.display = "flex";
-                              dots[slideIndex-1].className += " active";
-                            }
-                            </script>
                     </div>
                 </div>
             </div>
@@ -503,10 +385,10 @@
                         </p>
                     </div>
                     <div class="right">
-                        <img id="tall" src="images/project-3/example 1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                        <img id="tall" src="images/project-3/example 1.png" onclick="openModal('myModal2');currentSlide(1,'mySlides2')" class="hover-shadow">
                           <!-- The Modal/Lightbox -->
                           <div id="myModal2" class="modal">
-                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <span class="close cursor" onclick="closeModal('myModal2')">&times;</span>
                             <div class="modal-content">
                           
                               <div class="mySlides2">
@@ -525,50 +407,10 @@
                               </div>
                           
                               <!-- Next/previous controls -->
-                              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                              <a class="prev" onclick="plusSlides(-1,'mySlides2')">&#10094;</a>
+                              <a class="next" onclick="plusSlides(1,'mySlides2')">&#10095;</a>
                             </div>
                           </div>
-                          <script>
-                            // Open the Modal
-                            function openModal() {
-                              document.getElementById("myModal2").style.display = "flex";
-                            }
-                            
-                            // Close the Modal
-                            function closeModal() {
-                              document.getElementById("myModal2").style.display = "none";
-                            }
-                            
-                            var slideIndex = 1;
-                            showSlides(slideIndex);
-                            
-                            // Next/previous controls
-                            function plusSlides(n) {
-                              showSlides(slideIndex += n);
-                            }
-                            
-                            // Thumbnail image controls
-                            function currentSlide(n) {
-                              showSlides(slideIndex = n);
-                            }
-                            
-                            function showSlides(n) {
-                              var i;
-                              var slides = document.getElementsByClassName("mySlides2");
-                              var dots = document.getElementsByClassName("demo");
-                              if (n > slides.length) {slideIndex = 1}
-                              if (n < 1) {slideIndex = slides.length}
-                              for (i = 0; i < slides.length; i++) {
-                                slides[i].style.display = "none";
-                              }
-                              for (i = 0; i < dots.length; i++) {
-                                dots[i].className = dots[i].className.replace(" active", "");
-                              }
-                              slides[slideIndex-1].style.display = "flex";
-                              dots[slideIndex-1].className += " active";
-                            }
-                            </script>
                     </div>
                 </div>
             </div>
@@ -715,6 +557,12 @@
                         </p>
                     </div>
                     <div class="right">
+                        <a class="preview" href="https://getting-to-know-food.webflow.io/" target="_blank">
+                            <img src="images/project-6/Screenshot 2022-03-17 184755.png">
+                            <div class="overlay">
+                                <div class="text">View Site in New Tab (Note: This is a mobile experience only)</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -820,5 +668,4 @@
             </div>
         </main>
     </body>
-    <!-- <script src="script.js"></script> -->
 </html>
