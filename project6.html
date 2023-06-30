@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <title>Portfolio- Madison Ronchetto</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="modal.css"/>
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1>Madison Ronchetto</h1>
+            <nav>
+                <a id="projects-header" href="index.html">Work</a>
+                <a id="about-header" href="about.html">About</a>
+                <!-- <a id="creative-coding-header" href="experiments.html">Experiments</a> -->
+            </nav>
+        </header>
+        <a class="anchor" id="project-1-anchor"></a>
+        <div class="section" id="project-1">
+            <div class="intro-text">
+                <div class="left">
+                    <h2>St. Louis Bicentennial Postcards</h2>
+                    <p class="tags">Social Justice, Print Design</p>
+                </div>
+                <div class="right">
+                    <p>
+                        This postcard series highlights activists from St. Louis and shares an overlooked part of the city's history.
+                    </p>
+                </div>
+            </div>    
+            <img src="images/project-1/p1-image1.png">
+            <div class="main-text">
+                <div class="left">
+                    <h3>Overview</h3>
+                    <p>
+                        St. Louis was and is a divided city, but it is also home to activists that are improving the city and country. 
+                        This postcard series highlights activists from St. Louis and shares an overlooked part of the city's history.
+                    </p>
+                    <h3>Research</h3>
+                    <p>
+                        This series required me to do significant background research and talk with people who have lived in St. Louis longer than I. 
+                        I was familiar with contemporary activists such as Cori Bush and Joan Lipkin, but one of the most interesting biographies I centered on,		
+                        Percy Green, was someone I initially couldn't find online but rather learned about from professors familiar with his work.
+                    </p>
+                    <p>
+                        When looking at other design projects with similar subject matter, I was drawn to colors and image treatments that felt bold and contemporary without 
+                        staying stuck in the red, white, and blue language of activism. My past design work with the Sunrise Movement was a source of inspiration as well as<a href="https://www.pentagram.com/work/nyc-votes?rel=sector&rel-id=13">NYC Votes</a>led by Eddie Opara.
+                    </p>
+                    <a href="https://slate.com/news-and-politics/2021/12/percy-green-st-louis-activism-veiled-prophet-ball-ellie-kemper.html"><h4>Recommended Reading: Percy Green</h4></a>
+                    <h3>Takeaways</h3>
+                    <p>
+                        This was one of my earlier projects through my design education, and an introduction to making something that feels like a set without being monotonous.
+                        One decision I am proud of from this project was the choice to find a typeface that fit the tone and time period of the activists, which I found from the foundry<a href="https://www.vocaltype.co/">VocalType.</a>
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="column">
+                        <img src="images/project-1/Henry.png" onclick="openModal('myModal');currentSlide(1,'mySlides')" class="hover-shadow">
+                      </div>
+                    <div class="column">
+                        <img src="images/project-1/HenryB.png" onclick="openModal('myModal3');currentSlide(1,'mySlides3')" class="hover-shadow">
+                    </div>
+                      <!-- The Modal/Lightbox -->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal('myModal')">&times;</span>
+                        <div class="modal-content">
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="images/project-1/Henry.png">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="images/project-1/Cori.png">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="images/project-1/Joan.png">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="images/project-1/Percy.png">
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="images/project-1/Maya.png">
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="images/project-1/Max.png">
+                          </div>
+                          <!-- Next/previous controls -->
+                          <a class="prev" onclick="plusSlides(-1,'mySlides')">&#10094;</a>
+                          <a class="next" onclick="plusSlides(1,'mySlides')">&#10095;</a>
+                        </div>
+                      </div> -->
+                     
+                        <!-- The Modal/Lightbox -->
+                    <div id="myModal3" class="modal">
+                        <span class="close cursor" onclick="closeModal('myModal3')">&times;</span>
+                        <div class="modal-content">
+                      
+                          <div class="mySlides3">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="images/project-1/HenryB.png">
+                          </div>
+                      
+                          <div class="mySlides3">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="images/project-1/CoriB.png">
+                          </div>
+                      
+                          <div class="mySlides3">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="images/project-1/JoanB.png">
+                          </div>
+                      
+                          <div class="mySlides3">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="images/project-1/PercyB.png">
+                          </div>
+
+                          <div class="mySlides3">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="images/project-1/MayaB.png">
+                          </div>
+
+                          <div class="mySlides3">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="images/project-1/MaxB.png">
+                          </div>
+
+                          <!-- Next/previous controls -->
+                          <a class="prev" onclick="plusSlides(-1,'mySlides3')">&#10094;</a>
+                          <a class="next" onclick="plusSlides(1,'mySlides3')">&#10095;</a>
+                        </div>
+                      </div>
+                </div>
+            </div>   
+        </div>
+    </body>
+</html>

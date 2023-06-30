@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Portfolio- Madison Ronchetto</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="modal.css"/>
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1>Madison Ronchetto</h1>
+            <nav>
+                <a id="projects-header" href="index.html">Work</a>
+                <a id="about-header" href="about.html">About</a>
+                <!-- <a id="creative-coding-header" href="experiments.html">Experiments</a> -->
+            </nav>
+        </header>
+        <a class="anchor" id="project-3-anchor"></a>
+            <div class="section" id="project-3">
+                <div class="intro-text">
+                    <div class="left">
+                        <h2>Festival Snapchat Filters</h2>
+                        <p class="tags">Motion Design, Javascript, Digital, Creative Coding</p>
+                    </div>
+                    <div class="right">
+                        <p>
+                            This series of Snapchat filters is an exploration of 
+                            working with augmented reality and creating promotional videos.
+                        </p>
+                    </div>
+                </div>
+                <iframe width="100%" height="550px" src="https://www.youtube.com/embed/zrngOZvoZeI"></iframe>   
+                <div class="main-text">
+                    <div class="left">
+                        <h3>Overview</h3>
+                        <p>
+                            As conferences and concerts had to adopt to the pandemic, groups were tasked with creating virtual events that maintained the interactivity and 
+                            excitement of in person events. This series of Snapchat filters, made for Amy Auman's Typography in Motion course, is an exploration of 
+                            working with augmented reality and creating promotional videos.
+                        </p>
+                        <h3>Research</h3>
+                        <p>
+                            Although everyone in my class made promotional videos, my project was unique in that I worked with the Snapchat Lens Studio to create usable 
+                            filters. My professor and peers were not familiar with the program, so I had to read into the documentation on my own. This was one of my 
+                            first design projects where I discovered how much of an advantage it was to come from a background in computer science where learning new 
+                            programs and skills quickly is necessary to succeed.
+                        </p>
+                        <h3>Takeaways</h3>
+                        <p>
+                            One thing I wish I had developed further during this project was the video encapsulating the filters. 
+                            I spent most of my time developing and iterating over the filters when the original project was the promotional video. 
+                            In later projects, such as the Olympic visualization and intuitive eating app, I created a concrete timeline for myself 
+                            and thought holistically about the project so that I would be working on the key functionality throughout the entire project. 
+                            If I did a project like this again, I would storyboard the video and work on its transitions at the same time as I was working on the filters.
+                        </p>
+                    </div>
+                    <div class="right">
+                        <img id="tall" src="images/project-3/example 1.png" onclick="openModal('myModal2');currentSlide(1,'mySlides2')" class="hover-shadow">
+                          <!-- The Modal/Lightbox -->
+                          <div id="myModal2" class="modal">
+                            <span class="close cursor" onclick="closeModal('myModal2')">&times;</span>
+                            <div class="modal-content">
+                          
+                              <div class="mySlides2">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="images/project-3/example 1.png">
+                              </div>
+                          
+                              <div class="mySlides2">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="images/project-3/Screenshot 2022-03-18 001633.png">
+                              </div>
+                          
+                              <div class="mySlides2">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="images/project-3/Screenshot 2022-03-18 001727.png">
+                              </div>
+                          
+                              <!-- Next/previous controls -->
+                              <a class="prev" onclick="plusSlides(-1,'mySlides2')">&#10094;</a>
+                              <a class="next" onclick="plusSlides(1,'mySlides2')">&#10095;</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
